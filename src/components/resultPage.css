@@ -1,0 +1,91 @@
+.header{
+    display:flex;
+    position:sticky;
+    top:0;
+    float: left;
+    z-index:100;
+    background-color: white;
+    align-items:center;
+    width: 100%;
+    padding: 30px;
+    border-bottom: 1px solid lightgrey;
+}
+.container{
+    float:left;
+    width: 100%;
+}
+
+.header img{
+    height:50px;
+    margin-right:50px;
+}
+.header-body{
+    margin-right: 500px;
+}
+
+.options{
+    display:flex;
+    align-items: center;
+    color:grey;
+    margin-top:30px;
+}
+.options a{
+    text-decoration: none;
+    color:gray; 
+    margin-left: 5px;
+}
+.options-left, .options-right{
+    display:flex;
+    align-items: center;
+}
+.option{
+    display:flex;
+    align-items: center;
+    margin-right:20px;
+}
+.options-right{
+    margin-left: 80px;
+}
+.container .input{
+    margin:0px 0px;
+}
+.result-count{
+    color:#70757a;
+    font-size:14px;
+    margin-left: 0px;
+}
+.result{
+    margin:10px 10px;
+    height:200px;
+}
+.result-img{
+    height:50px;
+    width:50px;
+    object-fit:contain; 
+    margin-right:10px;
+}
+.result-link{
+    display:flex;
+    align-items:center;
+    text-decoration: none;
+    color:black;
+    margin-bottom:3px ;
+}
+.result-title{
+    text-decoration: none;
+    float:left;
+} 
+.result-title:hover {
+    text-decoration: underline;
+}
+.result-desc{
+    float:left;
+}
+.page-results{
+    max-width: 650px;
+    margin-top: auto;
+    margin-left: 240px;
+    margin-bottom: auto;
+    flex-direction: column;
+
+}
