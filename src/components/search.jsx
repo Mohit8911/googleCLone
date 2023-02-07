@@ -8,17 +8,18 @@ import { actionTypes } from '../reducer.js';
 import { useNavigate } from 'react-router-dom'
 
 const Search = ({ hideButtons }) => {
-    const [{}, dispatch] = useStateValue();
-    const [input, setInput] = useState("");
-    const history = useNavigate();
-    const search = (e) => {
-        e.preventDefault();
-        dispatch({
-            type: actionTypes.SET_SEARCH_TERM,
-            term:input
-        })
-        history('/result');
-    }
+  // eslint-disable-next-line
+  const [{}, dispatch] = useStateValue();
+  const [input, setInput] = useState("");
+  const history = useNavigate();
+  const search = (e) => {
+    e.preventDefault();
+    dispatch({
+      type: actionTypes.SET_SEARCH_TERM,
+      term: input,
+    });
+    history("/result");
+  };
   return (
     <form className="search">
       <div className="search-input">
@@ -36,7 +37,7 @@ const Search = ({ hideButtons }) => {
           </Button>
         </div>
       ) : (
-                  <div className="btn" style={{ display:"none"}}>
+        <div className="btn" style={{ display: "none" }}>
           <Button type="submit" onClick={search} variant="outlined">
             Google Search
           </Button>
